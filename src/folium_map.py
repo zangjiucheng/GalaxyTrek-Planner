@@ -16,5 +16,5 @@ class foliumMap:
     def add_marker(self, marker: folium.Marker) -> None:
         marker.add_to(self.map)
 
-    def write_html(self, m):
-        m.save("index.html")
+    def write_html(self):
+        self.map.save("index.html")
